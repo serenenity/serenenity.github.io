@@ -14,7 +14,9 @@ header{
     opacity: 0.9;
     background-image: radial-gradient(#030000 0.8500000000000001px, #e5e5f7 0.8500000000000001px);
     background-size: 20px 20px;
-    height: 100vh;
+    /* height: 100vh; */
+
+    padding: 100px 50px;
 
     display: flex;
     flex-direction: column;
@@ -25,6 +27,7 @@ header{
 
 .bio-summary{
     text-align: center;
+    margin: 20px 0;
 }
 
 .logo{
@@ -50,14 +53,57 @@ header{
 
 .picture{
     width: 350px;
-    height: 350px;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .picture img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: top center;
+    
+}
+
+.heading-2{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 5px;
+}
+
+.heading-3{
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.section-projects{
+    margin: 50px;
+}
+
+.projects{
+    padding: 20px;
+    margin: 5px;
+    border: #300000 1px solid;
+    border-radius: 10px;
+}
+
+.stack{
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px 5px 5px 0;
+    border-radius: 10px;
+    background-color: #e5e5f7;
+}
+
+.project-link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 24px;
+    margin: 5px 5px 5px 0;
+    /* color: white; */
+    background-color: #fadf7f;
+    border-radius: 6px;
 }
 
 @media only screen and (min-width: 601px){
@@ -69,11 +115,12 @@ header{
     }
 
     .picture{
-        order: 2;
+        order: -2;
     }
 
     .bio-summary{
         text-align: left;
+        margin-left: 50px;
     }
     
     .media-logos{
